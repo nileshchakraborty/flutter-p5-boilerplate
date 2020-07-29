@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:p5/p5.dart';
 
+import 'p5.dart';
 import 'sketch.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,13 +15,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  MySketch sketch;
+  Sketch sketch;
   PAnimator animator;
 
   @override
   void initState() {
     super.initState();
-    sketch = new MySketch();
+    sketch = new Sketch();
     // Need an animator to call the draw() method in the sketch continuously,
     // otherwise it will be called only when touch events are detected.
     animator = new PAnimator(this);

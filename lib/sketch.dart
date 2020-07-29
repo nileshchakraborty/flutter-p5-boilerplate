@@ -1,6 +1,6 @@
-import 'package:p5/p5.dart';
+import 'p5.dart';
 
-class MySketch extends PPainter {
+class Sketch extends PPainter {
   var strokes = new List<List<PVector>>();
 
   void setup() {
